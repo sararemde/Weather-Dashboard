@@ -1,0 +1,127 @@
+:root {
+    --darkText: black;
+    --lightText: white;
+    --asideBackground: #f2f2f2;
+    --borderColor: #e6e6e6;
+    --buttonColor: #3C5BFE;
+    --buttonColorHover: #8FCAFF;
+    font-family: 'roboto', sans-serif;
+    color: var(--darkText);
+}
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 auto;
+    background: var(--darkText);
+    padding: 1%;
+    text-align: center;
+    color: var(--lightText);
+}
+
+aside {
+    float: left;
+    background: var(--asideBackground);
+    width: 20%;
+    height: 100vh;
+    padding: 10px;
+}
+
+aside h3 {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#searchBar:focus {
+    outline: none;
+    border: var(--buttonColorHover) 1px solid;
+}
+
+#searchButton {
+    background: var(--buttonColor);
+    border: var(--buttonColor) 2.5px solid;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+    border: var(--buttonColorHover) 2.5px solid;
+}
+
+#searchButton:focus {
+    outline: none;
+}
+
+#searchedCity {
+    height: 50px;
+    padding-left: 25px;
+    line-height: 50px;
+    border-bottom: var(--borderColor) 1px solid;
+}
+
+#city8 {
+    border-bottom: none;
+}
+
+.hoverPointer {
+    cursor: pointer;
+}
+
+main {
+    float: left;
+    width: 75%;
+    height: 100vh;
+}
+
+#weatherToday {
+    margin: 15px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 25px;
+    border: var(--borderColor) 1px solid;
+    border-radius: 5px;
+    position: relative;
+}
+
+#currentIcon {
+    position: absolut;
+    top: 25px;
+}
+
+#currentUVIndex {
+    background: var(--asideBackground);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--lightText);
+}
+
+#weatherForecast {
+    margin: 15px;
+    width: 100%;
+    border: var(--lightText) 1px solid;
+}
+
+#dateContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.dateBox {
+    background: var(--buttonColor);
+    width: 150px;
+    height: 175px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: var(--lightText);
+    margin-right: 30px;
+}
+
+.weatherEmoji {
+    padding-left: 10px;
+}
