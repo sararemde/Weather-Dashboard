@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06 Server-Side APIs: Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Weather Dashboard</h1>
+    <aside>
+        <h3>Search for a City:</h3>
+        <form id="searchField">
+            <input type="text" id="searchBar"><input type="submit" id="searchButton" value="🔍">
+        </form>
+        <div id="searchedCities">
+            <div class="searchedCity" id="city1"></div>
+            <div class="searchedCity" id="city2"></div>
+            <div class="searchedCity" id="city3"></div>
+            <div class="searchedCity" id="city4"></div>
+            <div class="searchedCity" id="city5"></div>
+            <div class="searchedCity" id="city6"></div>
+            <div class="searchedCity" id="city7"></div>
+            <div class="searchedCity" id="city8"></div>
+        </div>
+    </aside>
+    <main>
+        <div id="weatherToday">
+            <h2><span id="currentCity">Search for a city to get started!</span> (<span id="currentDate">Today's Date</span>) <img src="./assets/images/weather-placeholder.png" width="50" height="50" id="currentIcon"></h2>
+            <p>Temperature: <span id="currentTemperature">—</span>°F</p>
+            <p>Humidity: <span id="currentHumidity">—</span>%</p>
+            <p>Wind Speed: <span id="currentWind">—</span> MPH</p>
+            <p>UV Index: <span id="currentUVIndex">—</span></p>
+        </div>
+        <div id="weatherForecast">
+            <h3>5-Day Forecast</h3>
+            <div id="dateContainer">
+                <div class="dateBox">
+                    <h4 id="day1">Tomorrow</h4>
+                    <p class="weatherEmoji"><img src="./assets/images/weather-placeholder.png" width="25" height="25" id="day1Icon"></p>
+                    <p>Temp: <span id="day1Temp">—</span>°F</p>
+                    <p>Humidity: <span id="day1Humidity">—</span>%</p>
+                </div>
+                <div class="dateBox">
+                    <h4 id="day2">... and the next day</h4>
+                    <p class="weatherEmoji"><img src="./assets/images/weather-placeholder.png" width="25" height="25" id="day2Icon"></p>
+                    <p>Temp: <span id="day2Temp">—</span>°F</p>
+                    <p>Humidity: <span id="day2Humidity">—</span>%</p>
+                </div>
+                <div class="dateBox">
+                    <h4 id="day3">... and the next day</h4>
+                    <p class="weatherEmoji"><img src="./assets/images/weather-placeholder.png" width="25" height="25" id="day3Icon"></p>
+                    <p>Temp: <span id="day3Temp">—</span>°F</p>
+                    <p>Humidity: <span id="day3Humidity">—</span>%</p>
+                </div>
+                <div class="dateBox">
+                    <h4 id="day4">... and the next day</h4>
+                    <p class="weatherEmoji"><img src="./assets/images/weather-placeholder.png" width="25" height="25" id="day4Icon"></p>
+                    <p>Temp: <span id="day4Temp">—</span>°F</p>
+                    <p>Humidity: <span id="day4Humidity">—</span>%</p>
+                </div>
+                <div class="dateBox">
+                    <h4 id="day5">... and the next day!</h4>
+                    <p class="weatherEmoji"><img src="./assets/images/weather-placeholder.png" width="25" height="25" id="day5Icon"></p>
+                    <p>Temp: <span id="day5Temp">—</span>°F</p>
+                    <p>Humidity: <span id="day5Humidity">—</span>%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scrript.js"></script>
+</body>
+</html>
